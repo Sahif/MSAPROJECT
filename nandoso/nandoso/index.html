@@ -2,26 +2,14 @@
 <html>
 <head>
     <title>Nandoso</title>
+    <script type="text/javascript" src=" http://api.worldweatheronline.com/free/v2/weather.ashx?q=1024%2CAuckland&format=json&num_of_days=1&key=8c7269415977e8af9b9241f3ad8a4"></script>
+    <link href="Content/style.css" rel="stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="css/style.css" rel="stylesheet" />
-    
-    <script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
 
-        $.ajax({
-            type: 'GET',
-            url: 'http://api.worldweatheronline.com/free/v2/weather.ashx?q=1024%2CAuckland&format=json&num_of_days=1&key=8c7269415977e8af9b9241f3ad8a4',
-            data: { get_param: 'value' },
-            dataType: 'json',
-            success: function (data) {
-                $.each(data, function (index, element) {
-                    if (index == "temp_C") {
-                        console.log(element);
-                    }
-                });
-            }
-        });
-
-    </script>
+ 
     <!--Application insight-->
     <script type="text/javascript">
         var appInsights=window.appInsights||function(config){
@@ -135,7 +123,7 @@
                                     Mt Eden<br />
                                     <br />
                                     Tel: 09 638 7780<br />
-
+                                    <a href="livechat.html">Live Chat</a>
                                     <br />
                                     Email:<br />
                                     info@nandoso.co.nz
